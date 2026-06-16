@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Inter;
+    font-type: normal;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format("truetype");
+}
+
+.attribution {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution p {
+    font-size: 0.6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    font-size: 14px;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px auto 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-info p {
+    color: hsl(75, 94%, 57%);
+    font-style: italic;
+}
+
+.social-links {
+    padding: 20px auto;
+}
+
+.social-links li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.social-links a {
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 30%);
+    border: none;
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+.social-links a:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+}
+
+.social-links a:focus-visible {
+    outline: 0 solid hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 12%);
+    background-color: hsl(75, 94%, 57%);
+}
+
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 90%;
+    }
+
+    .social-links a {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 440px) {
+    .card {
+        width: 80%;
+    }
+
+    .social-links a {
+        width: 100%;
+    }
+
+}
